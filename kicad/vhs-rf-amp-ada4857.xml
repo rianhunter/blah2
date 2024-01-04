@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/lain/Projects/Video/rf-capture/vhs-rf-amp-ada4857/kicad/vhs-rf-amp-ada4857.kicad_sch</source>
+    <date>Mi 03 Jan 2024 12:10:20 CET</date>
+    <tool>Eeschema 7.0.9</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>VHS ADA4857 Amp</title>
+        <company>Rene Wolf</company>
+        <rev>A</rev>
+        <date>2024-01-03</date>
+        <source>vhs-rf-amp-ada4857.kicad_sch</source>
+        <comment number="1" value="CC BY-SA 4.0"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>10uf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC">C96446</field>
+        <field name="MFR.Part">CL10A106MA8NRNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MFR.Part" value="CL10A106MA8NRNC"/>
+      <property name="LCSC" value="C96446"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="vhs-rf-amp-ada4857.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>02833685-b476-486a-a53c-98534c4920e1</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>10uf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC">C96446</field>
+        <field name="MFR.Part">CL10A106MA8NRNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MFR.Part" value="CL10A106MA8NRNC"/>
+      <property name="LCSC" value="C96446"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="vhs-rf-amp-ada4857.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>80741ecc-a471-46ee-8682-2a72a926363d</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>10uf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC">C96446</field>
+        <field name="MFR.Part">CL10A106MA8NRNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MFR.Part" value="CL10A106MA8NRNC"/>
+      <property name="LCSC" value="C96446"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="vhs-rf-amp-ada4857.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d06ec1df-b50e-433b-93fc-19db74d521ca</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>47uf</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="LCSC">C96123</field>
+        <field name="MFR.Part">CL31A476MPHNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C96123"/>
+      <property name="MFR.Part" value="CL31A476MPHNNNE"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="vhs-rf-amp-ada4857.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>38b2442e-4878-4bc5-b7d5-ab875288ca9a</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>47uf</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="LCSC">C96123</field>
+        <field name="MFR.Part">CL31A476MPHNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C96123"/>
+      <property name="MFR.Part" value="CL31A476MPHNNNE"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="vhs-rf-amp-ada4857.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1b9d7fba-ede8-4324-ad84-469dd8263799</tstamps>
+    </comp>
+    <comp ref="C14">
+      <value>100nf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC">C14663</field>
+        <field name="MFR.Part">CC0603KRX7R9BB104</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MFR.Part" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="vhs-rf-amp-ada4857.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0552316c-916f-49f9-80ab-66c0c87d5695</tstamps>
+    </comp>
+    <comp ref="C21">
+      <value>10uf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC">C96446</field>
+        <field name="MFR.Part">CL10A106MA8NRNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MFR.Part" value="CL10A106MA8NRNC"/>
+      <property name="LCSC" value="C96446"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="vhs-rf-amp-ada4857.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8031b730-b53c-48a1-b796-decdd8bf4518</tstamps>
+    </comp>
+    <comp ref="C22">
+      <value>47uf</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="LCSC">C96123</field>
+        <field name="MFR.Part">CL31A476MPHNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C96123"/>
+      <property name="MFR.Part" value="CL31A476MPHNNNE"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="vhs-rf-amp-ada4857.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>202fd6e7-a001-4cab-99b7-a6ee60e1c4c1</tstamps>
+    </comp>
+    <comp ref="C23">
+      <value>47uf</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="LCSC">C96123</field>
+        <field name="MFR.Part">CL31A476MPHNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C96123"/>
+      <property name="MFR.Part" value="CL31A476MPHNNNE"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="vhs-rf-amp-ada4857.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f8162cb2-0938-4fa1-8173-8315f9133b0d</tstamps>
+    </comp>
+    <comp ref="C24">
+      <value>100nf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC">C14663</field>
+        <field name="MFR.Part">CC0603KRX7R9BB104</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MFR.Part" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="vhs-rf-amp-ada4857.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a2042a7d-81f9-44a3-a115-f0d8b4ec20cc</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>75</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC">C4275</field>
+        <field name="MFR.Part">0603WAF750JT5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MFR.Part" value="0603WAF750JT5E"/>
+      <property name="LCSC" value="C4275"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="vhs-rf-amp-ada4857.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>77e10814-7670-4040-862c-c9e05053da86</tstamps>
+    </comp>
+    <comp ref="R25">
+      <value>75</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC">C4275</field>
+        <field name="MFR.Part">0603WAF750JT5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MFR.Part" value="0603WAF750JT5E"/>
+      <property name="LCSC" value="C4275"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="vhs-rf-amp-ada4857.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>415bfabc-dbdb-467a-96e8-84ae06f9c30e</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>ADA4857-1YRZ</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4857-1_4857-2.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C208021</field>
+        <field name="MFR.Part">ADA4857-1YRZ</field>
+      </fields>
+      <libsource lib="ada4857" part="ADA4857-1YRZ" description=""/>
+      <property name="LCSC" value="C208021"/>
+      <property name="MFR.Part" value="ADA4857-1YRZ"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="vhs-rf-amp-ada4857.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8351deac-5678-40ab-9641-40e197ca5656</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>ADA4857-1YRZ</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4857-1_4857-2.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C208021</field>
+        <field name="MFR.Part">ADA4857-1YRZ</field>
+      </fields>
+      <libsource lib="ada4857" part="ADA4857-1YRZ" description=""/>
+      <property name="LCSC" value="C208021"/>
+      <property name="MFR.Part" value="ADA4857-1YRZ"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="vhs-rf-amp-ada4857.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>39396a84-1aef-45e7-a273-ed0c23ce5c20</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>DS8604-A0S3</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-3</footprint>
+      <datasheet>https://jlcpcb.com/f89b283c-496b-4e21-ade4-1b47c1272a77</datasheet>
+      <fields>
+        <field name="LCSC">C5884205</field>
+        <field name="MFR.Part">DS8604-A0S3</field>
+      </fields>
+      <libsource lib="DS8604" part="DS8604-XXS3" description=""/>
+      <property name="LCSC" value="C5884205"/>
+      <property name="MFR.Part" value="DS8604-A0S3"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="vhs-rf-amp-ada4857.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>db48feec-0dd6-4c7d-b742-50b1a5e575f8</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_01x02_Pin">
+      <description>Generic connector, single row, 01x02, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Pin</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_Coaxial">
+      <description>coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)</description>
+      <docs> ~</docs>
+      <footprints>
+        <fp>*BNC*</fp>
+        <fp>*SMA*</fp>
+        <fp>*SMB*</fp>
+        <fp>*SMC*</fp>
+        <fp>*Cinch*</fp>
+        <fp>*LEMO*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_Coaxial</field>
+        <field name="Datasheet"> ~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="In" type="passive"/>
+        <pin num="2" name="Ext" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="DS8604" part="DS8604-XXS3">
+      <docs>https://jlcpcb.com/f89b283c-496b-4e21-ade4-1b47c1272a77</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-3</field>
+        <field name="Datasheet">https://jlcpcb.com/f89b283c-496b-4e21-ade4-1b47c1272a77</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VOUT" type="power_out"/>
+        <pin num="3" name="VIN" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="ada4857" part="ADA4857-1YRZ">
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4857-1_4857-2.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ADA4857-1YRZ</field>
+        <field name="Footprint">Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4857-1_4857-2.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="FB" type="output"/>
+        <pin num="2" name="-IN" type="input"/>
+        <pin num="3" name="+IN" type="input"/>
+        <pin num="4" name="-Vs" type="power_in"/>
+        <pin num="5" name="NC" type="no_connect"/>
+        <pin num="6" name="OUT" type="output"/>
+        <pin num="7" name="+Vs" type="power_in"/>
+        <pin num="8" name="PD" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/app/extensions/Library/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="DS8604">
+      <uri>/home/lain/Projects/Video/rf-capture/vhs-rf-amp-ada4857/kicad/DS8604.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/app/extensions/Library/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/app/extensions/Library/symbols//Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="ada4857">
+      <uri>/home/lain/Projects/Video/rf-capture/vhs-rf-amp-ada4857/kicad/ada4857.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/vss">
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C24" pin="1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="+Vs" pintype="power_in"/>
+      <node ref="U2" pin="7" pinfunction="+Vs" pintype="power_in"/>
+      <node ref="U3" pin="2" pinfunction="VOUT" pintype="power_out"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C22" pin="2" pintype="passive"/>
+      <node ref="C24" pin="2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="-Vs" pintype="power_in"/>
+      <node ref="U1" pin="8" pinfunction="PD" pintype="input"/>
+      <node ref="U2" pin="4" pinfunction="-Vs" pintype="power_in"/>
+      <node ref="U2" pin="8" pinfunction="PD" pintype="input"/>
+      <node ref="U3" pin="1" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="3" name="Net-(C12-Pad1)">
+      <node ref="C12" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="Net-(C13-Pad1)">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+    </net>
+    <net code="5" name="Net-(C22-Pad1)">
+      <node ref="C22" pin="1" pintype="passive"/>
+    </net>
+    <net code="6" name="Net-(C23-Pad1)">
+      <node ref="C23" pin="1" pintype="passive"/>
+      <node ref="R25" pin="1" pintype="passive"/>
+    </net>
+    <net code="8" name="Net-(J2-Pin_2)">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="VIN" pintype="power_in"/>
+    </net>
+    <net code="9" name="Net-(J11-In)">
+      <node ref="C11" pin="1" pintype="passive"/>
+    </net>
+    <net code="10" name="Net-(J12-In)">
+      <node ref="R15" pin="2" pintype="passive"/>
+    </net>
+    <net code="11" name="Net-(J21-In)">
+      <node ref="C21" pin="1" pintype="passive"/>
+    </net>
+    <net code="12" name="Net-(J22-In)">
+      <node ref="R25" pin="2" pintype="passive"/>
+    </net>
+    <net code="13" name="Net-(U1-+IN)">
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="+IN" pintype="input"/>
+    </net>
+    <net code="14" name="Net-(U1--IN)">
+      <node ref="U1" pin="2" pinfunction="-IN" pintype="input"/>
+    </net>
+    <net code="15" name="Net-(U1-FB)">
+      <node ref="U1" pin="1" pinfunction="FB" pintype="output"/>
+    </net>
+    <net code="16" name="Net-(U1-OUT)">
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="OUT" pintype="output"/>
+    </net>
+    <net code="17" name="Net-(U2-+IN)">
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="+IN" pintype="input"/>
+    </net>
+    <net code="18" name="Net-(U2--IN)">
+      <node ref="U2" pin="2" pinfunction="-IN" pintype="input"/>
+    </net>
+    <net code="19" name="Net-(U2-FB)">
+      <node ref="U2" pin="1" pinfunction="FB" pintype="output"/>
+    </net>
+    <net code="20" name="Net-(U2-OUT)">
+      <node ref="C23" pin="2" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="OUT" pintype="output"/>
+    </net>
+    <net code="21" name="unconnected-(U1-NC-Pad5)">
+      <node ref="U1" pin="5" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="22" name="unconnected-(U2-NC-Pad5)">
+      <node ref="U2" pin="5" pinfunction="NC" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>
