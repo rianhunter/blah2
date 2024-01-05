@@ -1,6 +1,6 @@
 # A ADA4857 dual channel amplifier for VHS decode RF capture
 
-![render-rev-a-front.png](render-rev-a-front.png) ![render-rev-a-back.png](render-rev-a-back.png)
+![render-rev-a-front.png](render-rev-a-front.png)
 
 An [ADA4857][ada4857-datasheet] based, configurable, dual channel amplifier and line driver for [VHS decode][vhs-decode].
 The board is intended to be permanently mounted into a chosen VHS player, providing an amplified, 75 Ohms impedance output for the video and HiFi audio RF signals.
@@ -210,7 +210,9 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 See [releases](https://gitlab.com/wolfre/vhs-rf-amp-ada4857/-/releases) for PCB gerbers, BOM and pick'n'place files ready for fabrication.
 
-# License
+## License
+
+See [LICENSE.md](LICENSE.md)
 
 [ada4857-datasheet]: https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4857-1_4857-2.pdf
 [ds8604-datasheet]: https://jlcpcb.com/partdetail/Dstech-DS8604A0S3/C5884205
