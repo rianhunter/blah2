@@ -4,23 +4,23 @@
 
 An [ADA4857][ada4857-datasheet] based, configurable, dual channel amplifier and line driver for [VHS decode][vhs-decode].
 The board is intended to be permanently mounted into a chosen VHS player, providing an amplified, 75 Ohms impedance output for the video and HiFi audio RF signals.
-To build the amp you need to choose the appropriate components fitting for your VHS player, read on to find out more.
-
 Find gerbers, BOM and pick'n'place files ready for fabrication over in the [releases section](https://gitlab.com/wolfre/vhs-rf-amp-ada4857/-/releases).
+Most of the boards are pre-assembled, but you will need to choose (and solder) the appropriate components fitting for your VHS player for final installation.
+
 This project is a follow up / improvement on the [previous SGM8302 dual channel amplifier](https://gitlab.com/wolfre/vhs-rf-amp-sgm8302) of the same nature.
 
 ## Overview
 
 The following diagram shows the intended usecase for this dual channel amplifier installed into a VHS player.
-The Parts that will be installed into the VHS player, coming from this project are drawn in blue.
+The Parts that are coming from this project and will be installed are drawn in blue.
 
 ![system-diagram.png](system-diagram.png)
 
 The design is based on two [ADA4857][ada4857-datasheet] single channel op amps, with a [DS8604-A0S3][ds8604-datasheet] 10V LDO and a few other passive components.
 Both RF paths are identical and all the following discussion applies to path A and B equally.
 The op amps are driven from a single 10V power supply (via an [LDO][wiki-ldo]), meaning the neutral / center voltage for the op amps is 5V.
-Each of the amp inputs is being AC coupled into a termination resistor (a 1:1 divider to add the needed 5V DC offset) and will need to be selected according to you needs (see [build guide][self-build-guide]).
-The op amps are used in a non-inverting design with a fixed gain factor, which also must be selected according to you needs (see [build guide][self-build-guide]).
+Each of the amp inputs is being AC coupled into a termination resistor (a 1:1 divider to add the needed 5V DC offset) and will need to be configured according to your VHS players needs (see [build guide][self-build-guide]).
+The op amps are used in a non-inverting design with a fixed gain factor, which also must be configured according to your VHS players signals (see [build guide][self-build-guide]).
 The amp outputs have a DC block capacitor and 75 Ohms resistor in series, for the usual 75 Ohms impedance line and load to drive.
 Mechanically the board is designed for [edge mount SMA connectors](https://www.google.com/search?q=sma+connector+edge+mount) but can also fit 2.54mm pin headers mounted sideways, or direct soldering.
 
@@ -32,17 +32,12 @@ The following guide will walk you through each step in details.
 Before you start ordering and building, you should read the entire guide at least once so you know what to expect.
 Here's an overview of the steps you will needed to do:
 - [Order the amp boards with JLCPCB][ordering-guide-jlc] (most of the components come pre-assembled from the fab).
-  You probably want to buy 4 edge mount SMA connectors, with about 6.5mm edge length.
-  But you can also solder directly to the amp board or solder 2.54mm pin headers in lying flat on the board.
-- Install a tap on the RF video and RF HiFi off the head amp from inside your player.
+- Install a tap on the RF video and RF HiFi signals from the tape head amp of your player.
   As this is specific to your player model, only some general information is covered in this guide.
 - Find a suitable power supply rail in your VHS player (something with at least 12V).
   And configure the amp boards power supply section to work with your chosen power rail.
-  You may need to buy an additional [Zener diode][wiki-zener] for this step (see later details).
 - Configure each amp paths input termination to match / work with the players head amps.
-  You will need solder additional 0805 resistors to the amp board for this step (see later details).
-- Configure each amp paths signal gain to deliver an signal level high enough to fit your capture device.
-  You will need solder additional 0805 resistors to the amp board for this step (see later details).
+- Configure each amp paths signal gain to deliver a signal level high enough to fit your capture device.
 - Mount the amp board into your VHS player and wire up suitable output connectors.
   As this is specific to your player model, this step is beyond the scope of this guide and will not be covered.
 
@@ -53,11 +48,11 @@ However you may want to start looking here, as these videos cover the things nee
 - Branchus Creations Beginner's Guide to Soldering Electronics [Part 1](https://www.youtube.com/watch?v=M2Jf8cebwCs) and [Part 2](https://www.youtube.com/watch?v=BPuH1Z2npoQ)
 - Electronoobs [SMD Soldering Tutorial | Guide | Tools | Tecniques | Stencil](https://www.youtube.com/watch?v=fYInlAmPnGo)
 
-You will be dealing with high frequency analog signals, that need to be measured and observed to find the correct input termination and gain factor.
+Also you will be dealing with high frequency analog signals, that need to be measured and observed to find the correct input termination and gain factor.
 This requires either a [Digital storage oscilloscope][wiki-dso], or an [analog oscilloscope][wiki-scope] in good working order.
 To correctly assess the signals, your scope should have an analog bandwidth of at least 20MHz, and you need high impedance probes as well
 (1M or greater, usually the 10x setting on your oscilloscopes probes is a good fit).
-This guide will assume you are familiar with oscilloscopes (if you are unsure have a look at GreatScott! [Everything you need to know when buying/using an Oscilloscope! EB#49](https://www.youtube.com/watch?v=d58GzhXKKG8)).
+This guide will assume you are familiar with oscilloscopes (you may have have a look at GreatScott!s [Everything you need to know when buying/using an Oscilloscope! EB#49](https://www.youtube.com/watch?v=d58GzhXKKG8) to get started).
 
 As evident from the steps above, you will need to know your way around your VHS player and a service manual will be of great help.
 
@@ -86,10 +81,12 @@ Selecting them will be covered in subsequent sections, but here's a list of what
 
 ### RF tap
 
+The [VHS-Decode wiki][rf-tap] has an ever growing wealth of information on various players, so you should start over there.
+
 When looking for an RF tap point, the goal is to be as close to the tape head amplifier outputs as possible.
 The following diagram shows the logical components of a VHS RF tape pickup inside your player (both the RF video and HiFi RF audio paths will look similar).
 
-![render-rev-a-back.png](render-rev-a-back.png)
+![head-tap.png](head-tap.png)
 
 The ideal tap point is right after the head switch, so that one RF signal contains both head outputs.
 The newer your player the more components will be integrated in to complex ICs and may not be available separately.
@@ -150,19 +147,21 @@ Hook up a [DSO][wiki-dso] to the output of your tap and observe the signal level
 Temporarily attach the chosen resistor value between signal and (analog) ground to see if the levels drop.
 If they stay the same then repeat with a resistor value that is about half your current value, if they do drop, double the value.
 You are looking for a value where the signal is just barely dropping, multiply that value by 20, that's your input termination.
-This termination value is then be installed in both R11 and R12 positions (R21 and R22 respectively).
+This termination value is then installed in both R11 and R12 positions (or R21 and R22 respectively).
 
 One of the signal paths is going to be for video, the other for audio.
 As both path A and B are equal on the [ADA4857][ada4857-datasheet] amp board, it does not matter which path is used for what signal.
-But you have to do the above try'n'error sequence for both head amps as they possibly differ.
+But you have to do the above try'n'error sequence for both head amps / taps as they possibly differ.
 
 ### Adapting the amp gain to your VHS player
 
 Once you have your input stage setup, you need to choose the gain for each signal path.
-Make sure to observe the video and audio RF signal levels from your tap points with different VHS tapes.
+To do that, observe the video and audio RF signal levels from your tap points when playing different VHS tapes.
 Different tapes will have different signal levels (test newer and older tapes, NTSC and PAL, etc).
 Consulting the service manual for your player may also give you a good idea about the expected signal levels.
 Based on this you now need to choose the values for R13 + R14 (path A) and R23 + R24 (path B).
+Again every VHS player is different, but just for reference, the video levels could be somewhere around 100mVpp to 300mVpp.
+HiFi RF signal levels are usually higher than video levels, so maybe 500mVpp ~ 1000mVpp.
 
 You should also know what your target capture device needs as a good input range.
 A [CXADC](https://github.com/happycube/cxadc-linux3) seems to be [fine with about 1.5Vpp](https://gitlab.com/wolfre/cx25800-11z-cxadc-rework-measurements) (peak-to-peak).
@@ -203,10 +202,6 @@ This is the default found on CX based capture cards and in other video based app
 However this can be changed to 50 Ohms by replacing the series resistors R15 and/or R24 with a 50 Ohms 0603.
 You can either do this by editing the BOM when ordering, or simply replace them afterwards if needed.
 
-## Final words
-
-**TODO**
-
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md).
@@ -232,3 +227,4 @@ See [releases](https://gitlab.com/wolfre/vhs-rf-amp-ada4857/-/releases) for PCB 
 [ebay-xl4015]: https://www.ebay.com/sch/i.html?&_nkw=XL4015+step+down
 [wiki-ldo]: https://en.wikipedia.org/wiki/Low-dropout_regulator
 [xl4015-datasheet]: https://datasheet.lcsc.com/lcsc/1811081616_XLSEMI-XL4015E1_C51661.pdf
+[vhs-decode]: https://github.com/oyvindln/vhs-decode
