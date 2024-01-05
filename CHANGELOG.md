@@ -7,9 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [rev-a]
+
 ### Added
 
 - PCB - Rev A design
 - Doc - Initial build guide
 
-[unreleased]: https://gitlab.com/wolfre/vhs-rf-amp-ada4857/-/tree/main
+[unreleased]: https://gitlab.com/wolfre/vhs-rf-amp-ada4857/-/compare/rev-a...main
+[rev-a]: https://gitlab.com/wolfre/vhs-rf-amp-ada4857/-/tree/rev-a
