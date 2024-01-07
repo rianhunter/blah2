@@ -171,23 +171,26 @@ This means we need 6x gain, here's why: from 0.5V to 1.5V is a 3x gain, but you 
 The following tables lists good combinations for the resistor pairs from the [E12](https://en.wikipedia.org/wiki/E_series_of_preferred_numbers) series.
 In doubt select the next lower gain to get more headroom on the ADC input.
 
-|Rf (Ohms) | Rin (Ohms) | gain | Est. bandwidth (MHz)|
-|----------|------------|------|---------------------|
-| 560      | 560        |  2   | 350                 |
-| 560      | 270        | 3.0  | 180                 |
-| 560      | 180        | 4.1  | 120                 |
-| 560      | 150        | 4.7  | 95                  |
-| 560      | 120        | 5.6  | 75                  |
-| 560      | 100        | 6.6  | 60                  |
-| 560      |  82        | 7.8  | 55                  |
-| 560      |  68        | 9.2  | 45                  |
-| 560      |  56        | 11.0 | 35                  |
-| 560      |  47        | 12.9 | 30                  |
-| 560      |  39        | 15.4 | 25                  |
+|Rf (Ohms) | Rin (Ohms) | gain | Est. upper -3dB bandwidth (MHz)| Est. lower -3dB bandwidth (Hz) |
+|----------|------------|------|--------------------------------|--------------------------------|
+| 560      | 1000       |  1.6 | 500                            | 22                             |
+| 560      | 560        |  2.0 | 350                            | 22                             |
+| 560      | 270        |  3.0 | 180                            | 22                             |
+| 560      | 180        |  4.1 | 120                            | 22                             |
+| 560      | 150        |  4.7 |  95                            | 22                             |
+| 560      | 120        |  5.6 |  75                            | 28                             |
+| 560      | 100        |  6.6 |  60                            | 33                             |
+| 560      |  82        |  7.8 |  55                            | 41                             |
+| 560      |  68        |  9.2 |  45                            | 50                             |
+| 560      |  56        | 11.0 |  35                            | 60                             |
+| 560      |  47        | 12.9 |  30                            | 72                             |
+| 560      |  39        | 15.4 |  25                            | 87                             |
 
-The bandwidth estimations are based on an extrapolation for the couple values from the data sheet.
+The upper bandwidth estimations are based on an extrapolation for the couple values from the data sheet.
 They are only rough guidelines and don't take into account anything but the amp IC.
 So no tap point quality, PCB design, connector losses, cabling limits, etc.
+The lower bandwidth estimations are based on the high pass filter of the Rin with the 47uF DC blocking capacitor.
+For lower gain settings, the lower bandwidth is further limited by the 150 Ohms output load and the 47 uF DC blocking capacitor.
 
 The above table lists Rf and Rin values, the mapping is as follows:
 - Path A
@@ -199,8 +202,10 @@ The above table lists Rf and Rin values, the mapping is as follows:
 
 As mentioned previously the design of the board fits a 75 Ohms impedance / transmission line and termination.
 This is the default found on CX based capture cards and in other video based applications.
-However this can be changed to 50 Ohms by replacing the series resistors R15 and/or R24 with a 50 Ohms 0603.
-You can either do this by editing the BOM when ordering, or simply replace them afterwards if needed.
+However R15 and/or R24 can be changed to 50 Ohms:
+- by replacing the resistors with a 50 Ohms 0603 by editing the BOM when ordering
+- after ordering by de-soldering the 75 Ohms and replacing them with 50 Ohms
+- by soldering a 150 Ohms 0603 in parallel to a 75 Ohms
 
 ## Changelog
 

@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Doc - Gain table now has the lower estimated bandwidth listed
+- Doc - Describe another option to get 50 Ohms termination
+
+### Fixed
+
+- Doc - System overview diagram now has the amp gain as up to 15 (10 previously)
+
 ## [rev-a]
 
 ### Added
